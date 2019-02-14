@@ -3,11 +3,11 @@
 
 int main(void)
 {
-    int h = get_int("Enter first number: ");
-    int j = get_int("Enter first number: ");
-    if (h==j)
+    string h = get_string("Enter first number: ");
+    string j = get_string("Enter first number: ");
+    if (strlen(h)!=strlen(j))
     {
-        printf("The are similar!\n");
+        printf("The are not similar!\n");
     }
     else
     {
