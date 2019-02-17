@@ -6,7 +6,11 @@
 int main(void)
 {
     string s= get_string("Enter string: ");
-    if (strlen(s)>0)
+    if (!s)
+    {
+        return 1;
+    }
+    else
     {
         string p=s;
         p[0]= toupper(p[0]);
